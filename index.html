@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zennith Vivy Media</title>
+  <meta name="description" content="Zennith Vivy Media is a personal backup tool that saves the owner's media archive to the owner's own Google Drive.">
+  <style>
+    :root {
+      --paper: #f6f7f4;
+      --ink: #1d2a33;
+      --muted: #56646e;
+      --rule: #d5dbdf;
+      --link: #245b8f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #161b1f;
+        --ink: #e6eaec;
+        --muted: #9aa7b0;
+        --rule: #2c353c;
+        --link: #8cbcea;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1.0625rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      line-height: 1.15;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.01em;
+    }
+    .lead {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin: 0 0 2.5rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 2rem 0 0.5rem;
+    }
+    p, ul { margin: 0 0 1rem; }
+    ul { padding-left: 1.25rem; }
+    a { color: var(--link); text-underline-offset: 0.15em; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Zennith Vivy Media</h1>
+    <p class="lead">A personal backup tool that keeps a copy of its owner's media archive in the owner's own Google Drive.</p>
+
+    <h2>What it does</h2>
+    <p>Zennith Vivy Media runs on a private server operated by its owner. It collects media files from accounts the owner manages, checks that each file is complete, and uploads it to a dedicated folder in the owner's Google Drive. After the upload is confirmed with a checksum, the local copy is removed.</p>
+
+    <h2>Who can use it</h2>
+    <p>Zennith Vivy Media is not a public service. It is used only by its owner, and it only accesses the owner's own Google account.</p>
+
+    <h2>Google Drive access</h2>
+    <p>The app requests a single Google permission: access to files that the app itself creates in Google Drive (the <code>drive.file</code> scope). It cannot see or change any other files in the account.</p>
+
+    <p><a href="privacy.html">Read the privacy policy</a></p>
+
+    <footer>
+      <p>Contact: <a href="mailto:paul.802026@gmail.com">paul.802026@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
